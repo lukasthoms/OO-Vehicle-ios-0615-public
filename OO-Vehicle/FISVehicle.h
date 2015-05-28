@@ -10,6 +10,15 @@
 
 @interface FISVehicle : NSObject
 
-//code goes here
+@property (nonatomic) CGFloat weight;
+@property (nonatomic) CGFloat topSpeed;
+@property (nonatomic) CGFloat currentSpeed;
+@property (nonatomic) CGFloat currentDirection;
+
+-(void)increaseSpeed;
+-(void)brake;
+-(void)turnLeft;
+-(void)turnRight;
+-(instancetype) initWithWeight:(CGFloat)weight topSpeed:(CGFloat)topSpeed currentSpeed:(CGFloat)currentSpeed currentDirection:(CGFloat)currentDirection;
 
 @end

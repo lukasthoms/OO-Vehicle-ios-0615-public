@@ -10,6 +10,11 @@
 
 @implementation FISRaceCar
 
-//code goes here
+-(instancetype) init {
+    self = [super initWithWeight:1270 topSpeed:615 currentSpeed:0 currentDirection:0];
+    NSArray *sponsors = @[@"KFC", @"Taco Bell", @"Pizza Hut"];
+    _sponsors = sponsors;
+    return self;
+}
 
 @end
